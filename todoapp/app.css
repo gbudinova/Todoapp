@@ -1,0 +1,51 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+.todo-list {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+.todo-list.pending {
+  background-color: #f9f9f9;
+}
+
+.todo-list.completed {
+  background-color: #f0f8ff;
+}
+
+.todo-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  margin: 5px 0;
+  background: white;
+  border-radius: 4px;
+}
+
+.todo-item .meta {
+  font-size: 0.8em;
+  color: #666;
+}
+
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}

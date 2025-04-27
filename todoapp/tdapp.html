@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="app.css">
+</head>
+<body>
+  <div class="app">
+    <h1>Todo App</h1>
+    <div class="container">
+      <div class="todo-list pending">
+        <h2>Uncompleted Todos</h2>
+        <div class="controls">
+          <div class="filter">
+            <label>Filter by User:</label>
+            <select id="filter-user">
+              <option value="all">All Users</option>
+              <option value="1">alice</option>
+              <option value="2">bob</option>
+            </select>
+          </div>
+          <div class="sort">
+            <label>Sort by Text:</label>
+            <select id="sort-pending">
+              <option value="asc">A-Z</option>
+              <option value="desc">Z-A</option>
+            </select>
+          </div>
+        </div>
+        <ul id="pending-todos">
+        </ul>
+      </div>
+
+      <div class="todo-list completed">
+        <h2>Completed Todos</h2>
+        
+        <div class="sort-controls">
+          <label>Sort by Completed Date:</label>
+          <select id="sort-completed">
+            <option value="newest">Newest First</option>
+            <option value="oldest">Oldest First</option>
+          </select>
+        </div>
+
+        <ul id="completed-todos">
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
